@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB Jain College Seminar Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .form-group input[type="text"]:invalid, .form-group input[type="email"]:invalid {
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>SB Jain College Institute Seminar Registration</h2>
+        <form action="#" method="post">
+            <!-- Personal Information Section -->
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+
+            <div class="form-group">
+                <label for="college">College Name</label>
+                <input type="text" id="college" name="college" required placeholder="Enter your college name">
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year of Study</label>
+                <select id="year" name="year" required>
+                    <option value="" disabled selected>Select your year of study</option>
+                    <option value="1">First Year</option>
+                    <option value="2">Second Year</option>
+                    <option value="3">Third Year</option>
+                    <option value="4">Final Year</option>
+                </select>
+            </div>
+
+            <!-- Seminar Preferences Section -->
+            <div class="form-group">
+                <label for="session">Preferred Seminar Session</label>
+                <select id="session" name="session" required>
+                    <option value="" disabled selected>Select session</option>
+                    <option value="morning">Morning Session (10 AM - 12 PM)</option>
+                    <option value="afternoon">Afternoon Session (1 PM - 3 PM)</option>
+                    <option value="evening">Evening Session (4 PM - 6 PM)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any special requests or comments"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
